@@ -54,10 +54,10 @@
   test-data: |
     Нет данных
   steps:
-    1. Перейти по ссылке https://codebattle.hexlet.io/settings  
-    2. Зайти в аккаунт, который привязан в Github
-    3. Нажать "Settings"
-    4. Нажать кнопку «Unlink Github»
+    - Перейти по ссылке https://codebattle.hexlet.io/settings  
+    - Зайти в аккаунт, который привязан в Github
+    - Нажать "Settings"
+    - Нажать кнопку «Unlink Github»
   expected-result: |
     Аккаунт Github отвязан, на странице пользователя перестает отображаться ссылка на него
         
@@ -70,9 +70,9 @@
   test-data: |
     Нет данных
   steps:
-    1. Авторизоваться на Codebattle
-    2. Открыть TOP list в блоке LEADERBOARD
-    3. Нажать на Performance
+    - Авторизоваться на Codebattle
+    - Открыть TOP list в блоке LEADERBOARD
+    - Нажать на Performance
   expected-result: |
     Аккаунт Github отвязан, на странице пользователя перестает отображаться ссылка на него
         
@@ -85,10 +85,10 @@
   test-data: |
     Нет данных
   steps:
-    1. Авторизоваться на Codebattle
-    2. Выбрать Settings
-    3. Сменить тип звука на другой (кроме Silent)
-    4. Подвинуть слайдер громкости
+    - Авторизоваться на Codebattle
+    - Выбрать Settings
+    - Сменить тип звука на другой (кроме Silent)
+    - Подвинуть слайдер громкости
   expected-result: |
     Прозвучит вновь выбранный звук при движении слайдера громкости в настройках аккаунта
     
