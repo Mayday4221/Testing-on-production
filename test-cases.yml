@@ -55,12 +55,29 @@
   test-data: |
     Нет данных
   steps:
-    - Перейти по ссылке https://codebattle.hexlet.io
     - Нажать Sign In
     - Ввести в поле Email свой e-mail из зарегистрированного аккаунта
     - Нажать Submit
   expected-result: |
-    Новый пароль придет на e-mail из зарегистрированного аккаунта
+    Новый пароль должен прийти на e-mail из зарегистрированного аккаунта
     
-
+- summary: |
+    Проверка возможности сыграть с другом в выбранный тип игры
+  requirement: |
+    Невозможность сыграть с другом в выбранный тип игры
+  prerequisites:
+    Открыта главная страница 
+  test-data: |
+    Нет данных
+  steps:
+    - Нажать Create a game
+    - Выбрать Level - *
+    - Выбрать Game Type - With a friend
+    - Выбрать Time control - 7 min
+    - Выбрать Choose task by name or tags - "add_two_number"
+    - Выбрать друга RomaSub
+    - Нажать Create invite
+    - RomaSub принимает моё приглашение
+  expected-result: |
+    Возможность сыграть с выбранным другом в выбранную мной игру
     
